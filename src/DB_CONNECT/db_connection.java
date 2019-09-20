@@ -16,16 +16,23 @@ import javax.swing.JOptionPane;
  * @author KEVO
  */
 public class db_connection {
-    private static final String user_name="root";
-     private static final String password="";
-      private static final String con_string="jdbc:mysql://localhost/point_of_sale";
+    //MYSQL CONNECTION
+//    private static final String user_name="root";
+//    private static final String password="";
+//    private static final String con_string="jdbc:mysql://localhost/point_of_sale";
+      
+      //sqlite connection
+      private static final String con_string="jdbc:sqlite:src/db/point_of_sale";
       
       public static Connection db_con() {
-          Connection con=null;
+         // Connection con=null;
           try {
-              
-              con=DriverManager.getConnection(con_string, user_name, password);
-             //JOptionPane.showMessageDialog(null, "connected");
+               //MYSQL CONNECTION
+              //con=DriverManager.getConnection(con_string, user_name, password);
+           
+              //sqlite connection
+          Connection  con=DriverManager.getConnection(con_string);
+            
               
               return con;
               

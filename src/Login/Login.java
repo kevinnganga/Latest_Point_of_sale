@@ -190,7 +190,7 @@ public class Login extends javax.swing.JFrame {
                 //home.setVisible(true);
 
             }else{
-                JOptionPane.showMessageDialog(null, "Access denied!!...Incorrecct username or password..Contact KEVO NGASH FOR HELP");
+                JOptionPane.showMessageDialog(null, "Access denied!!...Incorrecct username or password.");
                 textField.setText(null);
                 passwordField.setText(null);
                 //frame1.dispose();
